@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import { menuItems } from "../../data/header.ts";
-import { Menu, X, Github, Linkedin } from "lucide-vue-next";
+import { Menu, X } from "lucide-vue-next";
 
 const activeSection = ref("home");
 const mobileMenuOpen = ref(false);
@@ -13,12 +13,7 @@ const setSection = (id) => {
 <template>
   <header class="relative z-50 glass-panel border-b-0 border-white/10 px-6 py-4 flex justify-between items-center bg-dark/80">
     <div class="flex items-center gap-2 cursor-pointer" @click="setSection('home')">
-      <div
-        class="w-8 h-8 rounded bg-linear-to-tr from-cyan-500 to-purple-500 flex items-center justify-center font-bold text-white shadow-[0_0_15px_rgba(6,182,212,0.5)]"
-      >
-        M
-      </div>
-      <span class="font-semibold tracking-wide hidden sm:block">Mujib<span class="text-cyan-400">.dev</span></span>
+      <span class="font-bold text-lg tracking-wide block">Try<span class="text-cyan-400">Dev</span></span>
     </div>
 
     <nav class="hidden md:flex gap-1 bg-white/5 p-1 rounded-full border border-white/10">
